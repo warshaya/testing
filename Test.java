@@ -1,9 +1,7 @@
-
-
-public class Test.java
+public class Test
 {
-	public static void main(String[] args)
+	public static void main( String[] args )
 	{
-		Console con = new System.console();
+		System.out.println( "Hello there, World!" );
 	}
 }	
