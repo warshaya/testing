@@ -1,9 +1,12 @@
-import acm.program.*;
-
-public class Test2 extends ConsoleProgram
+public class Test2
 {
-	public void run()
+	public static void main( String[] args )
 	{
-		println( "Hello, World!" );
+		System.out.println( "instantiating program1");
+		MyWritingProgram program1 = new MyWritingProgram( new StringWriterOne() );
+		System.out.println( "program1 created with StringWriterOne" );
+		System.out.println( "instantiating program2" );
+		MyWritingProgram program2 = new MyWritingProgram( new StringWriterTwo() );
+		System.out.println( "program2 created with StringWriterTWo" );
 	}
 }
